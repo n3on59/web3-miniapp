@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Web3 Mini App</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <h2>Hello from Web3 Mini App 👋</h2>
+  <button onclick="sendData()">Send Data to Bot</button>
+
+  <script>
+    const tg = window.Telegram.WebApp;
+    tg.expand(); // تمام صفحه باز بشه
+
+    function sendData() {
+      tg.sendData("User clicked the button!");
+    }
+  </script>
+</body>
+</html>
